@@ -24,14 +24,14 @@ div.main{
   }
 
 }
-
+/*
 body {
 
   color: #606468;
   font: 87.5%/1.5em 'Open Sans', sans-serif;
   margin: 0;
 }
-
+*/
 a {
 	color: #eee;
 	text-decoration: none;
@@ -70,9 +70,10 @@ p {
 }
 
 .container {
-  position: relative;
-  align-content: center;
-  padding-top: 20%;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* ---------- LOGIN ---------- */
@@ -94,6 +95,8 @@ color:#fff;
 font-size:50px;
   line-height: 125px;
 }
+
+/*---------------Botão--------------------*/
 
 #login form span.fa {
 	background-color: #fff;
@@ -117,6 +120,7 @@ fieldset{
     margin: 0;
 
 }
+
 #login form input[type="text"], input[type="password"] {
 	background-color: #fff;
 	border-radius: 0px 3px 3px 0px;
@@ -138,10 +142,10 @@ fieldset{
   padding: 5px 10px;
   height: 30px;
 }
-
 #login form input[type="submit"]:hover {
 	background-color: #d44179;
 }
+/*-----------------------------------------*/
 
 #login > p {
 	text-align: center;
@@ -150,6 +154,7 @@ fieldset{
 #login > p span {
 	padding-left: 5px;
 }
+
 .middle {
   display: flex;
   width: 600px;
@@ -162,6 +167,7 @@ fieldset{
 	padding-bottom: 3%;
 }
 
-#cardLogin{
-  position: relative;
+
+.ng-invalid.ng-touched:not(form){
+  border: 1px solid red;
 }
