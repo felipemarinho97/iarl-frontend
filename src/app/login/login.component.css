@@ -5,7 +5,6 @@
 
 
 div.main{
-  width: 100%;
   height: calc(100vh);
 }
 
@@ -71,16 +70,15 @@ p {
 }
 
 .container {
-  left: 50%;
-  position: fixed;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  align-content: center;
+  padding-top: 20%;
 }
 
 /* ---------- LOGIN ---------- */
 
 #login form{
-	width: 250px;
+	width: 300px;
 }
 #login, .logo{
     display:inline-block;
@@ -125,7 +123,7 @@ fieldset{
 	color: #000;
 	margin-bottom: 1em;
 	padding: 0 16px;
-	width: 200px;
+	width: 250px;
 }
 
 #login form input[type="submit"] {
