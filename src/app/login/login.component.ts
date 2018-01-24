@@ -10,8 +10,7 @@ import { ViewContainerRef } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  username = '';
-  password = '';
+  model: any = {};
 
   constructor(private toastr: ToastsManager, vRef: ViewContainerRef) {
     this.toastr.setRootViewContainerRef(vRef);
@@ -21,10 +20,11 @@ export class LoginComponent implements OnInit {
   }
 
   /*Para teste apenas */
-  onClickMe(f) {
-    if ( this.username === '' || this.password === '' ) {
+  auth(f) {
+    if ( this.model.username === '' || this.model.password === '' ) {
       this.toastr.warning('Usuário ou senha inválido!', 'Alerta!');
-      console.log(f);
     }
+    console.log(f);
+    console.log(this.model);
   }
 }
