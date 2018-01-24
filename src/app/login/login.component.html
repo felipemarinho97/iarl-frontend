@@ -18,12 +18,16 @@
                             Placeholder="Usuário" 
                             [(ngModel)]="username" 
                             name="username" 
-                            required #nome="ngModel">
+                            required #user="ngModel">
                         </p> <!-- JS because of IE support; better: placeholder="Username" -->
-                        <!--<div *ngIf="!nome.valid && nome.touched">Usuario Obrigatório</div>-->
                         <p>
                             <span class="fa fa-lock"></span>
-                            <input id="password" type="password"  Placeholder="Senha" [(ngModel)]="password" name="password" required>
+                            <input id="password" 
+                            type="password"  
+                            Placeholder="Senha" 
+                            [(ngModel)]="password" 
+                            name="password" 
+                            required #key="ngModel">
                         </p> <!-- JS because of IE support; better: placeholder="Password" -->
                         
                         <div>
