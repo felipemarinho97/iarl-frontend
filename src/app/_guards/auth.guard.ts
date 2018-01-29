@@ -18,7 +18,7 @@ export class AuthGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<boolean> | Promise<boolean> | boolean {
-    // logica de guard aqui
+    // logica do guarda de rotas
     /*
     if(this.authService.curretUser()){
       return true;
