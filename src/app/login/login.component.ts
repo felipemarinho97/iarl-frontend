@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
 
   /*Para teste apenas */
   auth(f) {
-    if ( this.model.username === '' || this.model.password === '' ) {
+    if ( !this.model.username || !this.model.password ) {
       this.toastr.warning('Usuário ou senha inválido!', 'Alerta!');
     }
     console.log(f);

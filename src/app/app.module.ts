@@ -10,13 +10,16 @@ import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { AppRoutingModule } from './/app-routing.module';
+import { DeskboardComponent } from './deskboard/deskboard.component';
+import { AuthGuard } from './_guards/auth.guard';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    FooterComponent
+    FooterComponent,
+    DeskboardComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,7 @@ import { AppRoutingModule } from './/app-routing.module';
     ToastModule.forRoot(),
     AppRoutingModule,
   ],
-  providers: [ ToastsManager ],
+  providers: [ ToastsManager, AuthGuard ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
