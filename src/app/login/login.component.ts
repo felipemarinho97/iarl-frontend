@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 import { ToastsManager } from 'ng2-toastr/ng2-toastr';
 import { ViewContainerRef } from '@angular/core';
+import { AuthService } from '../_services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,11 @@ export class LoginComponent implements OnInit {
 
   model: any = {};
 
-  constructor(private toastr: ToastsManager, vRef: ViewContainerRef) {
+  constructor(
+    private toastr: ToastsManager,
+    vRef: ViewContainerRef,
+    private auth: AuthService
+    ) {
     this.toastr.setRootViewContainerRef(vRef);
   }
 
@@ -20,11 +25,10 @@ export class LoginComponent implements OnInit {
   }
 
   /*Para teste apenas */
-  auth(f) {
+  login(f) {
     if ( !this.model.username || !this.model.password ) {
       this.toastr.warning('Usuário ou senha inválido!', 'Alerta!');
     }
-    console.log(f);
-    console.log(this.model);
+    this.auth.login(this.model);
   }
 }

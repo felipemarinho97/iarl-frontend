@@ -13,6 +13,9 @@ import { AppRoutingModule } from './/app-routing.module';
 import { DeskboardComponent } from './deskboard/deskboard.component';
 import { AuthGuard } from './_guards/auth.guard';
 
+import { AuthService } from './_services/auth.service';
+import { HttpModule } from '@angular/http';
+
 
 @NgModule({
   declarations: [
@@ -27,8 +30,13 @@ import { AuthGuard } from './_guards/auth.guard';
     BrowserAnimationsModule,
     ToastModule.forRoot(),
     AppRoutingModule,
+    HttpModule
   ],
-  providers: [ ToastsManager, AuthGuard ],
+  providers: [
+    ToastsManager,
+    AuthGuard,
+    AuthService
+  ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
