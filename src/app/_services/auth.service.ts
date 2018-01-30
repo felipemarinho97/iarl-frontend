@@ -5,8 +5,6 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class AuthService {
 
-  teste: any = null;
-
   constructor(private http: Http) { }
 
   // https://httpbin.org/post -> test post
@@ -15,5 +13,4 @@ export class AuthService {
     .map(res => res)
     .subscribe(dados => console.log(dados));
   }
-
 }
