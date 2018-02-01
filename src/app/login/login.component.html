@@ -8,7 +8,7 @@
             
             <div id="login">
                 
-                <form #f="ngForm" action="javascript:void(0);" method="get" >
+                <form #f="ngForm" action="localhost:3000/api/login" method="get" >
                     
                     <fieldset class="clearfix">
                         <p>
@@ -19,6 +19,7 @@
                             [(ngModel)]="model.username" 
                             name="username" 
                             required #user="ngModel">
+                            <!--pattern="/([A-z0-9])\w/g"-->
                         </p> <!-- JS because of IE support; better: placeholder="Username" -->
                         <p>
                             <span class="fa fa-lock"></span>
