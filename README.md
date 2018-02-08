@@ -1,27 +1,20 @@
-# IarlFrontend
+IARL
+===
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+[![GitHub issues](https://img.shields.io/github/issues/Guardians-DSC/iarl.svg)](https://github.com/Guardians-DSC/iarl/issues)
+[![GitHub forks](https://img.shields.io/github/forks/Guardians-DSC/iarl.svg)](https://github.com/Guardians-DSC/iarl/network)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Guardians-DSC/iarl/master/LICENSE)
 
-## Development server
+### Descrição
+Tem-se como descrição o que se segue:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+> A **I**nterface de **A**cesso **R**emoto a **L**aboratórios é uma aplicação web que fornece uma interface amigável, de uso fácil e simplificado, de acesso a arquivos e diretórios para os usuários dos LCC (Laboratório de Ciência da Computação).
 
-## Code scaffolding
+### Frameworks
+* [AngularJS 1.x](https://angularjs.org/)
+* [NodeJS 6.11.3](https://nodejs.org/en/)
+* [Bootstrap v3.3.7](http://getbootstrap.com/docs/3.3/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Deploy
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Para subir uma instância do IARL, basta possuir Docker e docker-compose instalados e executar o comando `docker-compose up -d`
